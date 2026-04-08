@@ -20,7 +20,7 @@ Privacy-first location timeline platform
 
 
 ## Screenshots
-![Screenshot of Geopulse](./doc/screenshots/screenshot.jpg)
+![Screenshot of Geopulse](./doc/screenshots/screenshot.png)
 
 ## 📦 Developer info
 
