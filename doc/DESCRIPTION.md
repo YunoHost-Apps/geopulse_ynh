@@ -1,0 +1,1 @@
+GeoPulse transforms raw GPS data from OwnTracks, Overland, Dawarich, GPSLogger, Home Assistant, and other sources into a searchable timeline of stays, trips, and movement patterns. It runs fully on your own infrastructure and integrates with Immich so your photos appear directly on your map history.

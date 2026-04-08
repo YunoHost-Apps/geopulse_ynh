@@ -1,0 +1,73 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/main/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "geopulse"
+name = "Geopulse"
+description.en = "Privacy-first location timeline platform"
+description.fr = "Plateforme de chronologie géographique axée sur la confidentialité"
+
+version = "1.25.0~ynh1"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "free"
+website = "https://tess1o.github.io/geopulse/"
+demo = "https://demo.example.com"
+admindoc = "https://tess1o.github.io/geopulse/docs/getting-started/deployment/manual-installation"
+userdoc = "https://tess1o.github.io/geopulse/"
+code = "https://github.com/tess1o/geopulse"
+
+[integration]
+yunohost = ">= 12.1.38"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+    [resources.sources]
+
+    [resources.sources.backend]
+    rename = "geopulse-backend"
+    in_subdir = false
+    extract = false
+    url = "https://github.com/tess1o/geopulse/releases/download/v1.25.0/geopulse-backend-native-amd64-1.25.0"
+    sha256 = "ec472e8e7d6d62dc2bf2fee519503d245e0b17f6c756bd1af8202b0e432957ad"
+
+    [resources.sources.frontend]
+    url = "https://github.com/tess1o/geopulse/releases/download/v1.25.0/geopulse-frontend-1.25.0.tar.gz"
+    sha256 = "5d34442d09005731e15039ff4651598763c5a6acbdc69e2b1ca908ba424f2c68"
+
+    autoupdate.strategy = "latest_github_release"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.ports]
+
+    [resources.apt]
+    packages = "postgresql"
+
+    [resources.database]
+    type = "postgresql"
