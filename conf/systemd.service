@@ -11,7 +11,7 @@ WorkingDirectory=__INSTALL_DIR__/
 EnvironmentFile=__INSTALL_DIR__/.env
 
 # Start the native binary with GC options
-ExecStart=__INSTALL_DIR__/backend/geopulse-backend -Dquarkus.http.host=0.0.0.0 -XX:MaximumHeapSizePercent=70 -XX:MaximumYoungGenerationSizePercent=15
+ExecStart=__INSTALL_DIR__/backend/geopulse-backend -Dquarkus.http.host=127.0.0.1 -XX:MaximumHeapSizePercent=70 -XX:MaximumYoungGenerationSizePercent=15
 
 # Restart policy
 Restart=on-failure
