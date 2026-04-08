@@ -11,7 +11,6 @@ It shall NOT be edited by hand.
 Privacy-first location timeline platform
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://tess1o.github.io/geopulse/)
-[![App Demo](https://img.shields.io/badge/App_Demo-blue?style=for-the-badge)](https://demo.example.com)
 [![Version: 1.25.0~ynh1](https://img.shields.io/badge/Version-1.25.0~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/geopulse/)
 
 <div align="center">
@@ -21,7 +20,7 @@ Privacy-first location timeline platform
 
 
 ## Screenshots
-![Screenshot of Geopulse](./doc/screenshots/screenshot.jpg)
+![Screenshot of Geopulse](./doc/screenshots/screenshot.png)
 
 ## 📦 Developer info
 
