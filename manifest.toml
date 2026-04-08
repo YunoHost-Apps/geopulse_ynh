@@ -14,7 +14,6 @@ maintainers = ["eric_G"]
 [upstream]
 license = "BUSL-1.1"
 website = "https://tess1o.github.io/geopulse/"
-demo = "https://demo.example.com"
 admindoc = "https://tess1o.github.io/geopulse/docs/getting-started/deployment/manual-installation"
 userdoc = "https://tess1o.github.io/geopulse/"
 code = "https://github.com/tess1o/geopulse"
